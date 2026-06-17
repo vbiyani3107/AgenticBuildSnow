@@ -1,0 +1,34 @@
+{
+  "artifact_type": "sysauto_script",
+  "name": "[SN-DO] Daily Top 10 Incidents List",
+  "table": "sysauto_script",
+  "scope": "global",
+  "session_id": "20260617-090539-daily-incident-list-job",
+  "source_instance": {
+    "name": "accenture-demo",
+    "url": "https://accentureservicessrodemo4.service-now.com"
+  },
+  "source_sys_id": "989d7d112b29c39015a9f5685e91bf91",
+  "update_set": {
+    "name": "[20260617-090539-daily-incident-list-job] Daily Incident List Job",
+    "sys_id": "ed8db115fb294790a5c9ff8165efdcbf"
+  },
+  "schedule": {
+    "run_type": "daily",
+    "run_time": "1970-01-01 15:00:00",
+    "run_time_display": "3:00 PM instance local time",
+    "time_zone": "",
+    "active": true,
+    "conditional": false,
+    "condition": ""
+  },
+  "behavior": {
+    "read_only": true,
+    "target_table": "incident",
+    "limit": 10,
+    "order_by": "sys_created_on DESC",
+    "output": "gs.info system log"
+  },
+  "created_by": "sn-do pipeline",
+  "created_on": "2026-06-17"
+}

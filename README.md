@@ -9,6 +9,7 @@ Agentic ServiceNow development workflow for Cursor — natural-language requests
 | `skills/` | Cursor agent skills (`sn-do`, pipeline orchestrator, analysis/build/test/document agents, spec workflow) |
 | `.cursor/rules/` | Workspace rule to auto-route ServiceNow requests to `sn-do` |
 | `.cursor/servicenow-sessions/` | Per-story session folders (requirements, handoff, build log, tests, docs) |
+| `artifacts/` | **Portable deploy scripts** to recreate ServiceNow config on other instances |
 
 ## Quick start
 
@@ -37,10 +38,10 @@ The workflow captures learnings per session (`learnings.md`) and promotes patter
 
 ## Example sessions
 
-| Session | Story |
-|---------|-------|
-| `20260617-090539-daily-incident-list-job` | Daily scheduled job — list top 10 incidents (read-only) at 3 PM |
-| `20250617-120000-incident-new-field` | Incident custom field (analysis) |
+| Session | Story | Portable artifact |
+|---------|-------|-------------------|
+| `20260617-090539-daily-incident-list-job` | Daily scheduled job — list top 10 incidents (read-only) at 3 PM | `artifacts/daily-incident-list-job/` |
+| `20250617-120000-incident-new-field` | Incident custom field (analysis) | — |
 
 ## Related
 
