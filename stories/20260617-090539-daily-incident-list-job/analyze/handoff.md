@@ -1,7 +1,7 @@
 # Handoff Document
 
 **Session ID**: 20260617-090539-daily-incident-list-job  
-**Session folder**: `.cursor/servicenow-sessions/20260617-090539-daily-incident-list-job/`  
+**Session folder**: `stories/20260617-090539-daily-incident-list-job/`  
 **Story ID**: SN-DO-SCHED-JOB  
 **Title**: Daily scheduled job to list top 10 incidents (read-only)  
 **Module**: incident-management  

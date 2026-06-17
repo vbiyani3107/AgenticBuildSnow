@@ -25,7 +25,7 @@ Generate at bootstrap: current UTC/local timestamp + kebab-case slug (max 30 cha
 ## Folder layout (mandatory)
 
 ```
-.cursor/servicenow-sessions/<session_id>/
+stories/<session_id>/
 ├── SESSION.md              ← Human manifest — read first in every agent run
 ├── session.json            ← Machine manifest — canonical path resolver
 ├── requirement/
@@ -69,7 +69,7 @@ Execute in order:
 1. If user gives explicit session path or session_id → use it
 2. Else if exactly one session.json has "active": true in workspace → use it
 3. Else if Analysis Agent and user pasted new requirement → bootstrap new session (step above)
-4. Else list recent sessions from .cursor/servicenow-sessions/*/session.json → ask user to pick
+4. Else list recent sessions from stories/*/session.json → ask user to pick
 5. Never read/write artifacts outside resolved session_root
 ```
 
@@ -140,8 +140,13 @@ Before finishing any agent run:
 
 ## Legacy migration
 
-Flat `.cursor/servicenow-artifacts/<slug>/` is **deprecated** — do not create new sessions in old layout.
+| Deprecated path | Use instead |
+|-----------------|-------------|
+| `.cursor/servicenow-sessions/<session_id>/` | `stories/<session_id>/` |
+| Flat `.cursor/servicenow-artifacts/<slug>/` | `stories/<session_id>/` |
+
+Do not create new sessions in deprecated layouts.
 
 ## Workspace index
 
-Optional: `.cursor/servicenow-sessions/INDEX.md` lists all sessions (session_id, title, status, current_phase, created_at) — Documentation Agent or Analysis bootstrap appends one row per new session.
+Optional: `stories/INDEX.md` lists all sessions (session_id, title, status, current_phase, created_at) — Documentation Agent or Analysis bootstrap appends one row per new session.

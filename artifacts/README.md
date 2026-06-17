@@ -14,4 +14,4 @@ Deployable scripts and metadata exported from **AgenticBuildSnow** pipeline sess
 2. Run `sysauto_script-recreate.js` (or equivalent) in **Scripts - Background** or via MCP.
 3. Verify in the target instance UI.
 
-Session history and evidence remain under `.cursor/servicenow-sessions/<session_id>/`.
+Session history and evidence remain under `stories/<session_id>/`.

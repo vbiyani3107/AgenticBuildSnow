@@ -1,7 +1,7 @@
 # Handoff Document
 
 **Session ID**: `20250617-120000-incident-new-field`  
-**Session folder**: `.cursor/servicenow-sessions/20250617-120000-incident-new-field/`  
+**Session folder**: `stories/20250617-120000-incident-new-field/`  
 **Story ID**: INC-FIELD-DEMO  
 **Title**: Add new custom field to Incident form  
 **Module**: incident-management  

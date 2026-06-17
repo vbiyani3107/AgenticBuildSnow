@@ -36,7 +36,7 @@ disable-model-invocation: true
 
 ## Step 0 — Bootstrap session
 
-New story → create `.cursor/servicenow-sessions/<session_id>/` full tree per session-protocol. Populate all phase `SPEC.md` files. Append INDEX.md. Create empty `learnings.md` from template.
+New story → create `stories/<session_id>/` full tree per session-protocol. Populate all phase `SPEC.md` files. Append INDEX.md. Create empty `learnings.md` from template.
 
 **Read [learnings-registry.md](../servicenow-spec-workflow/references/learnings-registry.md)** — apply patterns for planned artifact types (e.g. L003 for scheduled jobs).
 

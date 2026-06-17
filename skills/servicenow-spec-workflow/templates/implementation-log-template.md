@@ -1,7 +1,7 @@
 # Implementation Log Template
 
 **Session ID**: 
-**Session folder**: `.cursor/servicenow-sessions/<session_id>/`
+**Session folder**: `stories/<session_id>/`
 **Handoff Reference**: `analyze/handoff.md`
 **Developer Agent Run**: [date/time]
 **Instance**: [name + URL from SN-Get-Current-Instance]

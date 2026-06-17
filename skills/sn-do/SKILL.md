@@ -85,7 +85,7 @@ Short summary:
 
 ```
 Parsed: CREATE field on incident (classic, mandatory)
-Session: .cursor/servicenow-sessions/<id>/
+Session: stories/<id>/
 Assumed: u_external_ticket_id, string, itil ACLs (see handoff §3)
 Result: SUCCESS | PARTIAL | ANALYSIS ONLY
 Report: pipeline-execution-report.md

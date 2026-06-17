@@ -1,7 +1,7 @@
 # Test Report Template
 
 **Session ID**: 
-**Session folder**: `.cursor/servicenow-sessions/<session_id>/`
+**Session folder**: `stories/<session_id>/`
 **References**: `analyze/handoff.md`, `build/implementation-log.md`
 **Testing Agent Run**: [date/time]
 **Instance**: [name + URL]

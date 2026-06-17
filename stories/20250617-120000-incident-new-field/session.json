@@ -50,7 +50,7 @@
     }
   },
   "paths": {
-    "session_root": ".cursor/servicenow-sessions/20250617-120000-incident-new-field",
+    "session_root": "stories/20250617-120000-incident-new-field",
     "SESSION": "SESSION.md",
     "requirement": "requirement/requirement.md",
     "analyze": {

@@ -30,8 +30,9 @@ disable-model-invocation: true
 ## Session layout
 
 ```
-.cursor/servicenow-sessions/<session_id>/
+stories/<session_id>/
 ├── SESSION.md + session.json
+├── learnings.md
 ├── requirement/requirement.md
 ├── analyze/    SPEC.md, handoff.md, discovery-notes.md
 ├── build/      SPEC.md, implementation-log.md, evidence/

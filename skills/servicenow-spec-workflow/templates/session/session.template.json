@@ -52,7 +52,7 @@
     }
   },
   "paths": {
-    "session_root": ".cursor/servicenow-sessions/{{SESSION_ID}}",
+    "session_root": "stories/{{SESSION_ID}}",
     "SESSION": "SESSION.md",
     "requirement": "requirement/requirement.md",
     "analyze": {

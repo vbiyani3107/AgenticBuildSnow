@@ -4,12 +4,21 @@ Agentic ServiceNow development workflow for Cursor — natural-language requests
 
 ## What this repo contains
 
+```
+AgenticBuildSnow/
+├── stories/           ← Your ServiceNow stories (pipeline artifacts)
+├── artifacts/         ← Portable deploy scripts (recreate on any instance)
+├── skills/            ← sn-do pipeline skills + spec workflow
+└── .cursor/
+    └── rules/         ← Cursor-only: route SN requests to sn-do
+```
+
 | Path | Purpose |
 |------|---------|
-| `skills/` | Cursor agent skills (`sn-do`, pipeline orchestrator, analysis/build/test/document agents, spec workflow) |
+| `stories/` | **Per-story folders** — requirements, handoff, build log, tests, docs |
+| `artifacts/` | Portable deploy scripts to recreate ServiceNow config on other instances |
+| `skills/` | Cursor agent skills (`sn-do`, orchestrator, analysis/build/test/document, spec workflow) |
 | `.cursor/rules/` | Workspace rule to auto-route ServiceNow requests to `sn-do` |
-| `.cursor/servicenow-sessions/` | Per-story session folders (requirements, handoff, build log, tests, docs) |
-| `artifacts/` | **Portable deploy scripts** to recreate ServiceNow config on other instances |
 
 ## Quick start
 

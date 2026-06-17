@@ -101,7 +101,7 @@ This is intentional for remote chatbot delivery.
 
 ## Final deliverable
 
-`.cursor/servicenow-sessions/<session_id>/pipeline-execution-report.md`
+`stories/<session_id>/pipeline-execution-report.md`
 
 Update `session.json` → `pipeline` block.
 

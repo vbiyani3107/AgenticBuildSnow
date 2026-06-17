@@ -7,7 +7,7 @@ Use this structure for `document/jira-story.md`. Write for developers, testers, 
 ## [JIRA-KEY] Story Title
 
 **Session ID**: `<session_id>`  
-**Session folder**: `.cursor/servicenow-sessions/<session_id>/`
+**Session folder**: `stories/<session_id>/`
 
 | Field | Value |
 |-------|-------|
@@ -82,7 +82,7 @@ From `test/test-report.md`:
 
 ## References
 
-- Session manifest: `.cursor/servicenow-sessions/<session_id>/SESSION.md`
+- Session manifest: `stories/<session_id>/SESSION.md`
 - Handoff: `analyze/handoff.md`
 - Implementation log: `build/implementation-log.md`
 - Test report: `test/test-report.md`

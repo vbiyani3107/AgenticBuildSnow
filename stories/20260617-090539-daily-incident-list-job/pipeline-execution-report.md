@@ -13,7 +13,7 @@
 | Item | Value |
 |------|-------|
 | **Pipeline result** | PARTIAL |
-| **Session folder** | `.cursor/servicenow-sessions/20260617-090539-daily-incident-list-job/` |
+| **Session folder** | `stories/20260617-090539-daily-incident-list-job/` |
 | **Phases completed** | 4 / 4 |
 | **Rework cycles** | 0 |
 | **Ready for human deploy** | YES (with manual US capture step) |

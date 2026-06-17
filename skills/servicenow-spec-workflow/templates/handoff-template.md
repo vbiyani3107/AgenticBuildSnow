@@ -1,7 +1,7 @@
 # Handoff Document Template
 
 **Session ID**: [from session.json]
-**Session folder**: `.cursor/servicenow-sessions/<session_id>/`
+**Session folder**: `stories/<session_id>/`
 **Story ID**: [JIRA-KEY or session slug]
 **Title**: [One-line title]
 **Module**: incident-management | change-management | problem-management | catalog | other

@@ -1,7 +1,7 @@
 # [SN-DO-SCHED-JOB] Daily scheduled job to list top 10 incidents (read-only)
 
 **Session ID**: `20260617-090539-daily-incident-list-job`  
-**Session folder**: `.cursor/servicenow-sessions/20260617-090539-daily-incident-list-job/`
+**Session folder**: `stories/20260617-090539-daily-incident-list-job/`
 
 | Field | Value |
 |-------|-------|
@@ -129,7 +129,7 @@ Functional behavior verified with MCP queries and before/after incident timestam
 
 ## References
 
-- Session manifest: `.cursor/servicenow-sessions/20260617-090539-daily-incident-list-job/SESSION.md`
+- Session manifest: `stories/20260617-090539-daily-incident-list-job/SESSION.md`
 - Handoff: `analyze/handoff.md`
 - Implementation log: `build/implementation-log.md`
 - Test report: `test/test-report.md`

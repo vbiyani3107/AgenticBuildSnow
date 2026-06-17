@@ -13,7 +13,7 @@
 | Item | Value |
 |------|-------|
 | **Pipeline result** | SUCCESS / PARTIAL / FAILED |
-| **Session folder** | `.cursor/servicenow-sessions/<session_id>/` |
+| **Session folder** | `stories/<session_id>/` |
 | **Phases completed** | X / 4 |
 | **Rework cycles** | N |
 | **Ready for human deploy** | YES / NO |

@@ -62,6 +62,6 @@ New chat → paste requirement → /sn-analysis-agent
 
 ## Session artifacts location
 
-`.cursor/servicenow-sessions/<session_id>/` in workspace.
+`stories/<session_id>/` in workspace.
 
 See `INDEX.md` in that folder for all sessions.

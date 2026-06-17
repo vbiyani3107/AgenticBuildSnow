@@ -25,7 +25,7 @@ The workflow **learns from every pipeline run**. Mistakes, MCP limitations, user
 Each pipeline run SHOULD have:
 
 ```
-.cursor/servicenow-sessions/<session_id>/learnings.md
+stories/<session_id>/learnings.md
 ```
 
 Use [templates/learnings-session.template.md](../templates/learnings-session.template.md).
@@ -113,7 +113,7 @@ After G4 passes, before final chat scorecard:
 
 When user says *"recheck skills"*, *"self learning"*, *"update workflow from mistakes"*:
 
-1. Scan recent sessions: `.cursor/servicenow-sessions/*/learnings.md`, `test-report.md`, `implementation-log.md`
+1. Scan recent sessions: `stories/*/learnings.md`, `test-report.md`, `implementation-log.md`
 2. Promote any unpromoted PROPOSED entries
 3. Reconcile registry vs agent skills (orchestrator, mcp-playbook, gates) — patch gaps
 4. Report: learnings promoted, files patched, nothing pending

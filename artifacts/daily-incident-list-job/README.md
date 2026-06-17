@@ -54,7 +54,7 @@ If the form shows a different local time after deploy, edit `RUN_TIME` in the sc
 |------|-------|
 | Dev instance | accenture-demo |
 | Source sys_id | `989d7d112b29c39015a9f5685e91bf91` |
-| Session folder | `.cursor/servicenow-sessions/20260617-090539-daily-incident-list-job/` |
+| Session folder | `stories/20260617-090539-daily-incident-list-job/` |
 
 ## Rollback
 
@@ -71,5 +71,5 @@ if (gr.next()) {
 
 ## Related docs
 
-- Full pipeline session: `../../.cursor/servicenow-sessions/20260617-090539-daily-incident-list-job/document/jira-story.md`
-- Handoff design: `../../.cursor/servicenow-sessions/20260617-090539-daily-incident-list-job/analyze/handoff.md`
+- Full pipeline session: `../../stories/20260617-090539-daily-incident-list-job/document/jira-story.md`
+- Handoff design: `../../stories/20260617-090539-daily-incident-list-job/analyze/handoff.md`

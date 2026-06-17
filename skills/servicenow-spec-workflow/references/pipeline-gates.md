@@ -8,7 +8,7 @@ The orchestrator **must not advance** to the next phase until every check for th
 
 | # | Check | How to verify |
 |---|-------|---------------|
-| G0.1 | Session folder exists | Path `.cursor/servicenow-sessions/<session_id>/` |
+| G0.1 | Session folder exists | Path `stories/<session_id>/` |
 | G0.2 | session.json valid | Parse JSON; session_id matches folder |
 | G0.3 | requirement/requirement.md | Non-empty; contains user requirement text |
 | G0.4 | All phase SPEC.md exist | analyze, build, test, document |

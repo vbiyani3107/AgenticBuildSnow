@@ -32,7 +32,7 @@ Synthesize all session artifacts into Jira-ready documentation. Document truthfu
 
 - [ ] `document/jira-story.md` complete with Jira paste block
 - [ ] `session.json` → `phases.document.status` = `completed`, `status` = `completed`, `active` = false
-- [ ] Append row to `.cursor/servicenow-sessions/INDEX.md`
+- [ ] Append row to `stories/INDEX.md`
 
 ## Preconditions
 
