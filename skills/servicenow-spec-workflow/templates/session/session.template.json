@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "session_id": "{{SESSION_ID}}",
+  "created_at": "{{ISO8601_CREATED}}",
+  "updated_at": "{{ISO8601_UPDATED}}",
+  "active": true,
+  "status": "in_progress",
+  "current_phase": "analyze",
+  "jira_key": "{{JIRA_KEY}}",
+  "title": "{{TITLE}}",
+  "module": "incident-management",
+  "module_options": ["incident-management", "change-management", "problem-management", "catalog", "platform", "integration"],
+  "workspace_root": "{{WORKSPACE_ROOT}}",
+  "cursor_session_note": "One Cursor chat window = one session folder. All agents resolve paths from this file.",
+  "instance": {
+    "name": null,
+    "url": null,
+    "verified_at": null
+  },
+  "update_set": {
+    "name": null,
+    "sys_id": null
+  },
+  "phases": {
+    "analyze": {
+      "status": "in_progress",
+      "agent": "sn-analysis-agent",
+      "started_at": "{{ISO8601_CREATED}}",
+      "completed_at": null,
+      "handoff_status": null
+    },
+    "build": {
+      "status": "pending",
+      "agent": "sn-development-agent",
+      "started_at": null,
+      "completed_at": null,
+      "rework_count": 0,
+      "ready_for_testing": null
+    },
+    "test": {
+      "status": "pending",
+      "agent": "sn-testing-agent",
+      "started_at": null,
+      "completed_at": null,
+      "overall_result": null
+    },
+    "document": {
+      "status": "pending",
+      "agent": "sn-documentation-agent",
+      "started_at": null,
+      "completed_at": null
+    }
+  },
+  "paths": {
+    "session_root": ".cursor/servicenow-sessions/{{SESSION_ID}}",
+    "SESSION": "SESSION.md",
+    "requirement": "requirement/requirement.md",
+    "analyze": {
+      "spec": "analyze/SPEC.md",
+      "handoff": "analyze/handoff.md",
+      "discovery": "analyze/discovery-notes.md"
+    },
+    "build": {
+      "spec": "build/SPEC.md",
+      "implementation_log": "build/implementation-log.md",
+      "evidence_dir": "build/evidence"
+    },
+    "test": {
+      "spec": "test/SPEC.md",
+      "test_report": "test/test-report.md",
+      "evidence_dir": "test/evidence"
+    },
+    "document": {
+      "spec": "document/SPEC.md",
+      "jira_story": "document/jira-story.md"
+    },
+    "pipeline_report": "pipeline-execution-report.md",
+    "learnings": "learnings.md"
+  },
+  "links": {
+    "handoff_to_build": "analyze/handoff.md",
+    "build_log_for_test": "build/implementation-log.md",
+    "test_report_for_rework": "test/test-report.md",
+    "final_jira_doc": "document/jira-story.md"
+  }
+}

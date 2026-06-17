@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "session_id": "20260617-090539-daily-incident-list-job",
+  "created_at": "2026-06-17T09:05:39Z",
+  "updated_at": "2026-06-17T09:15:00Z",
+  "active": false,
+  "status": "completed",
+  "current_phase": "done",
+  "jira_key": "SN-DO-SCHED-JOB",
+  "title": "Daily scheduled job to list top 10 incidents (read-only)",
+  "module": "incident-management",
+  "workspace_root": "/Users/vinaykumar.biyani/developer/mcpdemo",
+  "instance": {
+    "name": "accenture-demo",
+    "url": "https://accentureservicessrodemo4.service-now.com",
+    "verified_at": "2026-06-17T09:05:39Z"
+  },
+  "update_set": {
+    "name": "[20260617-090539-daily-incident-list-job] Daily Incident List Job",
+    "sys_id": "ed8db115fb294790a5c9ff8165efdcbf"
+  },
+  "artifacts": {
+    "scheduled_job": {
+      "name": "[SN-DO] Daily Top 10 Incidents List",
+      "sys_id": "989d7d112b29c39015a9f5685e91bf91",
+      "table": "sysauto_script"
+    }
+  },
+  "phases": {
+    "analyze": {
+      "status": "completed",
+      "agent": "sn-analysis-agent",
+      "started_at": "2026-06-17T09:05:39Z",
+      "completed_at": "2026-06-17T09:10:00Z",
+      "handoff_status": "READY FOR DEVELOPMENT"
+    },
+    "build": {
+      "status": "completed",
+      "agent": "sn-development-agent",
+      "started_at": "2026-06-17T09:10:00Z",
+      "completed_at": "2026-06-17T09:12:00Z",
+      "rework_count": 0,
+      "ready_for_testing": true
+    },
+    "test": {
+      "status": "completed",
+      "agent": "sn-testing-agent",
+      "started_at": "2026-06-17T09:12:00Z",
+      "completed_at": "2026-06-17T09:14:00Z",
+      "overall_result": "PARTIAL"
+    },
+    "document": {
+      "status": "completed",
+      "agent": "sn-documentation-agent",
+      "started_at": "2026-06-17T09:14:00Z",
+      "completed_at": "2026-06-17T09:15:00Z"
+    }
+  },
+  "paths": {
+    "session_root": ".cursor/servicenow-sessions/20260617-090539-daily-incident-list-job",
+    "SESSION": "SESSION.md",
+    "requirement": "requirement/requirement.md",
+    "analyze": {
+      "spec": "analyze/SPEC.md",
+      "handoff": "analyze/handoff.md",
+      "discovery": "analyze/discovery-notes.md"
+    },
+    "build": {
+      "spec": "build/SPEC.md",
+      "implementation_log": "build/implementation-log.md",
+      "evidence_dir": "build/evidence"
+    },
+    "test": {
+      "spec": "test/SPEC.md",
+      "test_report": "test/test-report.md",
+      "evidence_dir": "test/evidence"
+    },
+    "document": {
+      "spec": "document/SPEC.md",
+      "jira_story": "document/jira-story.md"
+    },
+    "pipeline_report": "pipeline-execution-report.md",
+    "learnings": "learnings.md"
+  },
+  "pipeline": {
+    "last_run": "2026-06-17T09:15:00Z",
+    "mode": "autonomous",
+    "result": "PARTIAL"
+  }
+}

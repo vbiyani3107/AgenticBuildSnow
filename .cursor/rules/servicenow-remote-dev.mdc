@@ -1,0 +1,22 @@
+---
+description: Route conversational ServiceNow requests to sn-do / pipeline orchestrator with autonomous defaults.
+globs:
+alwaysApply: true
+---
+
+# ServiceNow remote development
+
+When the user mentions **pipeline orchestrator**, **sn-do**, or casual ServiceNow work (add/create/update/edit/delete field, form, rule, script, policy, flow on incident/change/problem):
+
+1. Read and follow skill **`sn-do`** (`~/.cursor/skills/sn-do/SKILL.md`)
+2. Default mode: **autonomous** (smart ServiceNow defaults, document in handoff §3)
+3. Run full pipeline unless user says **analyze only** / **don't build** / **don't do it**
+4. Session artifacts: `.cursor/servicenow-sessions/<session_id>/` (includes `learnings.md`)
+5. MCP server: `user-servicenow-demo` (dev instance only unless user explicitly approves prod)
+6. **Self-learning**: read `learnings-registry.md` at session start; promote learnings after pipeline; user *recheck skills* → reconcile workflow files
+
+Individual phases if user asks for one step only:
+- `/sn-analysis-agent` — design only
+- `/sn-development-agent` — build only
+- `/sn-testing-agent` — test only
+- `/sn-documentation-agent` — doc only

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "session_id": "20250617-120000-incident-new-field",
+  "created_at": "2026-06-17T12:00:00Z",
+  "updated_at": "2026-06-17T12:00:00Z",
+  "active": false,
+  "status": "in_progress",
+  "current_phase": "build",
+  "jira_key": "INC-FIELD-DEMO",
+  "title": "Add new custom field to Incident form",
+  "module": "incident-management",
+  "workspace_root": "/Users/vinaykumar.biyani/developer/mcpdemo",
+  "instance": {
+    "name": "accenture-demo",
+    "url": "https://accentureservicessrodemo4.service-now.com",
+    "verified_at": "2026-06-17T12:00:00Z"
+  },
+  "update_set": {
+    "name": null,
+    "sys_id": null
+  },
+  "phases": {
+    "analyze": {
+      "status": "completed",
+      "agent": "sn-analysis-agent",
+      "started_at": "2026-06-17T12:00:00Z",
+      "completed_at": "2026-06-17T12:00:00Z",
+      "handoff_status": "DRAFT"
+    },
+    "build": {
+      "status": "pending",
+      "agent": "sn-development-agent",
+      "started_at": null,
+      "completed_at": null,
+      "rework_count": 0,
+      "ready_for_testing": null
+    },
+    "test": {
+      "status": "pending",
+      "agent": "sn-testing-agent",
+      "started_at": null,
+      "completed_at": null,
+      "overall_result": null
+    },
+    "document": {
+      "status": "pending",
+      "agent": "sn-documentation-agent",
+      "started_at": null,
+      "completed_at": null
+    }
+  },
+  "paths": {
+    "session_root": ".cursor/servicenow-sessions/20250617-120000-incident-new-field",
+    "SESSION": "SESSION.md",
+    "requirement": "requirement/requirement.md",
+    "analyze": {
+      "spec": "analyze/SPEC.md",
+      "handoff": "analyze/handoff.md",
+      "discovery": "analyze/discovery-notes.md"
+    },
+    "build": {
+      "spec": "build/SPEC.md",
+      "implementation_log": "build/implementation-log.md",
+      "evidence_dir": "build/evidence"
+    },
+    "test": {
+      "spec": "test/SPEC.md",
+      "test_report": "test/test-report.md",
+      "evidence_dir": "test/evidence"
+    },
+    "document": {
+      "spec": "document/SPEC.md",
+      "jira_story": "document/jira-story.md"
+    },
+    "pipeline_report": "pipeline-execution-report.md"
+  },
+  "pipeline": {
+    "last_run": "analysis-only-demo",
+    "mode": "strict",
+    "result": "ANALYSIS_COMPLETE_BUILD_NOT_STARTED"
+  }
+}

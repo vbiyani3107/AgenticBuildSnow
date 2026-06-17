@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+credentials.json
+**/secrets/**
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Nested MCP project (separate git repo)
+demoenvservicenowmcp/
+
+# Logs and temp
+*.log
+tmp/
+.cache/
