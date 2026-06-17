@@ -40,5 +40,10 @@ Pipeline skills: [`../skills/`](../skills/) in this repo (copy to `~/.cursor/ski
 | Build | `/sn-development-agent` |
 | Test | `/sn-testing-agent` |
 | Document | `/sn-documentation-agent` |
+| **Revert** (separate) | `/sn-revert` or `/sn-revert-agent` |
 
 Index: [`../skills/servicenow-spec-workflow/REFERENCE-INDEX.md`](../skills/servicenow-spec-workflow/REFERENCE-INDEX.md)
+
+## Revert runs (separate from pipeline)
+
+Rollback of a pipeline session is **not** a pipeline phase. Output lives in [`../reverts/`](../reverts/) — see [`../reverts/README.md`](../reverts/README.md).

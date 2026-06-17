@@ -124,3 +124,9 @@ Details: [operation-intents.md](../servicenow-spec-workflow/references/operation
 - Use strict mode unless user asks
 - Hard-delete OOB artifacts without explicit confirmation
 - Skip pipeline report when running full pipeline
+- Run revert/rollback — that is **`/sn-revert-agent`** (separate skill, not a pipeline phase)
+
+## Revert (separate agent)
+
+To undo a completed pipeline session on dev, use **`/sn-revert`** or **`/sn-revert-agent`** — not sn-do.  
+Skill: `~/.cursor/skills/sn-revert-agent/SKILL.md` | Output: `reverts/<revert_id>/`

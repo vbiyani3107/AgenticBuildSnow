@@ -2,6 +2,7 @@
 
 | Session ID | Jira | Title | Module | Status | Phase | Created | Path |
 |------------|------|-------|--------|--------|-------|---------|------|
+| 20260617-145813-incident-service-mandatory | SN-DO-SERVICE-MAND | Make Service field mandatory on incident | incident-management | completed | done | 2026-06-17 | `stories/20260617-145813-incident-service-mandatory/` |
 | 20260617-090539-daily-incident-list-job | SN-DO-SCHED-JOB | Daily incident list scheduled job | incident-management | completed | done | 2026-06-17 | `stories/20260617-090539-daily-incident-list-job/` |
 | 20250617-120000-incident-new-field | INC-FIELD-DEMO | Add incident custom field | incident-management | in_progress | analysis done | 2026-06-17 | `stories/20250617-120000-incident-new-field/` |
 

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "revert_id": "20260617-152024-revert-incident-service-mandatory",
+  "source_session_id": "20260617-145813-incident-service-mandatory",
+  "source_session_root": "stories/20260617-145813-incident-service-mandatory",
+  "created_at": "2026-06-17T15:20:24Z",
+  "completed_at": "2026-06-17T15:21:30Z",
+  "status": "completed",
+  "title": "Revert: Make Service field mandatory on incident form",
+  "instance": {
+    "name": "accenture-demo",
+    "url": "https://accentureservicessrodemo4.service-now.com",
+    "verified_at": "2026-06-17T15:20:24Z"
+  },
+  "revert_update_set": {
+    "name": "[20260617-152024-revert-incident-service-mandatory] Revert Service Mandatory",
+    "sys_id": "9d031b952be1479015a9f5685e91bf76"
+  },
+  "artifacts_planned": 5,
+  "artifacts_reverted": 5,
+  "artifacts_skipped": 0,
+  "user_confirmed": true,
+  "paths": {
+    "revert_root": "reverts/20260617-152024-revert-incident-service-mandatory",
+    "REVERT": "REVERT.md",
+    "plan": "revert-plan.md",
+    "report": "revert-report.md",
+    "evidence_dir": "evidence"
+  },
+  "artifacts": [
+    { "table": "sys_ui_policy_action", "sys_id": "fd2e47d12ba1479015a9f5685e91bf62", "result": "PASS" },
+    { "table": "sys_ui_policy", "sys_id": "2d2e47d12ba1479015a9f5685e91bf42", "result": "PASS" },
+    { "table": "sys_data_policy_rule", "sys_id": "a92e47d12ba1479015a9f5685e91bf3c", "result": "PASS" },
+    { "table": "sys_data_policy2", "sys_id": "692e47d12ba1479015a9f5685e91bf0e", "result": "PASS" },
+    { "table": "sys_update_set", "sys_id": "ad2e07d12ba1479015a9f5685e91bfba", "result": "PASS" }
+  ]
+}

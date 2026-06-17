@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "revert_id": "{{REVERT_ID}}",
+  "source_session_id": "{{SOURCE_SESSION_ID}}",
+  "source_session_root": "stories/{{SOURCE_SESSION_ID}}",
+  "created_at": "{{ISO8601_CREATED}}",
+  "completed_at": null,
+  "status": "planned",
+  "title": "Revert: {{SOURCE_TITLE}}",
+  "instance": {
+    "name": null,
+    "url": null,
+    "verified_at": null
+  },
+  "revert_update_set": {
+    "name": null,
+    "sys_id": null
+  },
+  "artifacts_planned": 0,
+  "artifacts_reverted": 0,
+  "artifacts_skipped": 0,
+  "user_confirmed": false,
+  "paths": {
+    "revert_root": "reverts/{{REVERT_ID}}",
+    "REVERT": "REVERT.md",
+    "plan": "revert-plan.md",
+    "report": "revert-report.md",
+    "evidence_dir": "evidence"
+  },
+  "artifacts": []
+}

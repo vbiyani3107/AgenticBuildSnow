@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "session_id": "20260617-145813-incident-service-mandatory",
+  "created_at": "2026-06-17T14:58:13Z",
+  "updated_at": "2026-06-17T15:21:30Z",
+  "active": false,
+  "status": "completed",
+  "current_phase": "done",
+  "jira_key": "SN-DO-SERVICE-MAND",
+  "title": "Make Service field mandatory on incident form",
+  "module": "incident-management",
+  "workspace_root": "/Users/vinaykumar.biyani/developer/mcpdemo",
+  "instance": {
+    "name": "accenture-demo",
+    "url": "https://accentureservicessrodemo4.service-now.com",
+    "verified_at": "2026-06-17T14:58:13Z"
+  },
+  "update_set": {
+    "name": "[20260617-145813-incident-service-mandatory] Incident Service Mandatory",
+    "sys_id": "ad2e07d12ba1479015a9f5685e91bfba"
+  },
+  "artifacts": {
+    "data_policy": {
+      "name": "[SN-DO] Incident Service Mandatory - Data Policy",
+      "sys_id": "692e47d12ba1479015a9f5685e91bf0e",
+      "table": "sys_data_policy2"
+    },
+    "ui_policy": {
+      "name": "[SN-DO] Incident Service Mandatory - UI Policy",
+      "sys_id": "2d2e47d12ba1479015a9f5685e91bf42",
+      "table": "sys_ui_policy"
+    }
+  },
+  "phases": {
+    "analyze": {
+      "status": "completed",
+      "agent": "sn-analysis-agent",
+      "started_at": "2026-06-17T14:58:13Z",
+      "completed_at": "2026-06-17T14:59:00Z",
+      "handoff_status": "READY FOR DEVELOPMENT"
+    },
+    "build": {
+      "status": "completed",
+      "agent": "sn-development-agent",
+      "started_at": "2026-06-17T14:59:00Z",
+      "completed_at": "2026-06-17T15:00:00Z",
+      "rework_count": 0,
+      "ready_for_testing": true
+    },
+    "test": {
+      "status": "completed",
+      "agent": "sn-testing-agent",
+      "started_at": "2026-06-17T15:00:00Z",
+      "completed_at": "2026-06-17T15:01:00Z",
+      "overall_result": "PASS"
+    },
+    "document": {
+      "status": "completed",
+      "agent": "sn-documentation-agent",
+      "started_at": "2026-06-17T15:01:00Z",
+      "completed_at": "2026-06-17T15:02:00Z"
+    }
+  },
+  "paths": {
+    "session_root": "stories/20260617-145813-incident-service-mandatory",
+    "SESSION": "SESSION.md",
+    "requirement": "requirement/requirement.md",
+    "analyze": {
+      "spec": "analyze/SPEC.md",
+      "handoff": "analyze/handoff.md",
+      "discovery": "analyze/discovery-notes.md"
+    },
+    "build": {
+      "spec": "build/SPEC.md",
+      "implementation_log": "build/implementation-log.md",
+      "evidence_dir": "build/evidence"
+    },
+    "test": {
+      "spec": "test/SPEC.md",
+      "test_report": "test/test-report.md",
+      "evidence_dir": "test/evidence"
+    },
+    "document": {
+      "spec": "document/SPEC.md",
+      "jira_story": "document/jira-story.md"
+    },
+    "pipeline_report": "pipeline-execution-report.md",
+    "learnings": "learnings.md"
+  },
+  "pipeline": {
+    "last_run": "2026-06-17T15:02:00Z",
+    "mode": "autonomous",
+    "result": "SUCCESS"
+  },
+  "revert": {
+    "revert_id": "20260617-152024-revert-incident-service-mandatory",
+    "status": "completed",
+    "completed_at": "2026-06-17T15:21:30Z",
+    "report": "reverts/20260617-152024-revert-incident-service-mandatory/revert-report.md",
+    "result": "SUCCESS"
+  }
+}

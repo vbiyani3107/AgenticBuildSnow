@@ -20,3 +20,10 @@ Individual phases if user asks for one step only:
 - `/sn-development-agent` — build only
 - `/sn-testing-agent` — test only
 - `/sn-documentation-agent` — doc only
+
+**Revert (not part of pipeline)** — when user says revert, undo, roll back pipeline work, or `/sn-revert`:
+1. Read and follow skill **`sn-revert-agent`** (`~/.cursor/skills/sn-revert-agent/SKILL.md`)
+2. Scope: only artifacts from the named pipeline session (`build/implementation-log.md`)
+3. Default: deactivate (`active=false`) — never hard-delete unless user explicitly requests
+4. Revert artifacts: `reverts/<revert_id>/` (do not modify or delete `stories/` pipeline history)
+5. Always show revert plan + challenges before executing; inform user on blockers

@@ -12,6 +12,7 @@ All skills live in `~/.cursor/skills/`. This index is the map.
 | Test | `/sn-testing-agent` | QA |
 | Document | `/sn-documentation-agent` | Documentation |
 | **Pipeline** | `/sn-pipeline-orchestrator` | Engine (usually via sn-do) |
+| **Revert (separate)** | `/sn-revert` or `/sn-revert-agent` | Undo pipeline session on dev |
 
 ## Natural language (recommended)
 
@@ -62,6 +63,8 @@ New chat → paste requirement → /sn-analysis-agent
 
 ## Session artifacts location
 
-`stories/<session_id>/` in workspace.
+`stories/<session_id>/` in workspace — pipeline runs.
 
-See `INDEX.md` in that folder for all sessions.
+`reverts/<revert_id>/` in workspace — revert runs (separate agent, not a pipeline phase).
+
+See `stories/INDEX.md` and `reverts/INDEX.md`.
